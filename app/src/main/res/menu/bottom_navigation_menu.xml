@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
+        android:title="홈" />
+
+    <item
+        android:id="@+id/nav_search"
+        android:enabled="true"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="검색" />
+
+
+    <item
+        android:id="@+id/nav_favorites"
+        android:enabled="true"
+        android:icon="@drawable/ic_favorite_black_24dp"
+        android:title="관심 레시피"/>
+
+    <item
+        android:id="@+id/nav_category"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_menu_24"
+        android:title="카테고리" />
+
+
+
+</menu>

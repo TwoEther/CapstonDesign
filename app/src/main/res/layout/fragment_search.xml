@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="3dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="349dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanumbrush"
+                android:text="재료 검색"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="35sp"
+                />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <Button
+        android:id="@+id/ingredients_search"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="15dp"
+        android:text="@string/search"
+        android:background="@drawable/btn_design"
+        android:textColor="@color/colorText" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView2"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:text="곡류" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp">
+
+
+            <ToggleButton
+                android:id="@+id/button1"
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/btn_design"
+                android:textColor="@color/colorText"
+                android:textOff="누룽지"
+                android:textOn="누룽지 선택" />
+            <ToggleButton
+                android:id="@+id/button2"
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/btn_design"
+                android:textColor="@color/colorText"
+                android:textOff="밀가루"
+                android:textOn="밀가루 선택" />
+            <ToggleButton
+                android:id="@+id/button3"
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/btn_design"
+                android:textColor="@color/colorText"
+                android:textOff="쌀"
+                android:textOn="쌀 선택" />
+
+
+        </TableRow>
+
+
+
+        <TextView
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:text="가공/유제품" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp">
+
+
+            <ToggleButton
+                android:id="@+id/button4"
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/btn_design"
+                android:textColor="@color/colorText"
+                android:textOff="달걀"
+                android:textOn="달걀 선택" />
+            <ToggleButton
+                android:id="@+id/button5"
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/btn_design"
+                android:textColor="@color/colorText"
+                android:textOff="요거트"
+                android:textOn="요거트 선택" />
+            <ToggleButton
+                android:id="@+id/button6"
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/btn_design"
+                android:textColor="@color/colorText"
+                android:textOff="두부"
+                android:textOn="두부  선택" />
+
+
+
+        </TableRow>
+
+
+
+
+        <TextView
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:text="야채" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp">
+
+
+            <ToggleButton
+                android:id="@+id/button7"
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/btn_design"
+                android:textColor="@color/colorText"
+                android:textOff="당근"
+                android:textOn="당근 선택" />
+            <ToggleButton
+                android:id="@+id/button8"
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/btn_design"
+                android:textColor="@color/colorText"
+                android:textOff="숙주"
+                android:textOn="숙주 선택" />
+
+            <ToggleButton
+                android:id="@+id/button9"
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/btn_design"
+                android:textColor="@color/colorText"
+                android:textOff="애호박"
+                android:textOn="애호박 선택" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp">
+
+
+            <ToggleButton
+                android:id="@+id/button10"
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/btn_design"
+                android:textColor="@color/colorText"
+                android:textOff="양파"
+                android:textOn="양파 선택" />
+
+
+
+
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
