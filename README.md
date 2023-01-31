@@ -26,3 +26,4 @@ With Home Chef the user can see a random recipes, search recipies by ingredients
 ![3-3](https://user-images.githubusercontent.com/101616106/215674251-de73ba0c-1915-4a64-afca-d3c311f78e1b.PNG)"
 ![3-4](https://user-images.githubusercontent.com/101616106/215674257-81ac3198-eac0-4b78-8620-310d160980f7.PNG)"
 [3-5](https://user-images.githubusercontent.com/101616106/215674260-4d4769d8-066f-4ab1-b094-6ec89f10784d.PNG)"
+<img width="80%" src="https://user-images.githubusercontent.com/101616106/215674260-4d4769d8-066f-4ab1-b094-6ec89f10784d.PNG"/>
