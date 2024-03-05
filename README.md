@@ -1,4 +1,4 @@
-# 요리 초보를 위한 요리 레시피 애플리 케이션
+# 요리 초보를 위한 요리 레시피 애플리 케이션 <공공데이터 레시피 API를 사용>
 <p align="center"><img src="screenshots/chef_logo.png" heigth="250" width="250"/>Reference. https://github.com/MariaGarber/Home-Chef</p>
 
 
