@@ -114,7 +114,20 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
 
     private void searchRecipe(String search) {
         searchRecipe = new ArrayList<Recipe>();
-//        String URL="https://api.spoonacular.com/recipes/search?query=" + search + "&number=30&instructionsRequired=true&apiKey=c957b6816ba048139fbc25a67d2cff33";
+        /*
+            Request parameters
+            ※ http://openapi.foodsafetykorea.go.kr/api/keyId/serviceId/dataType/startIdx/endIdx
+                - keyId : 인증키
+                - serviceId	 : 서비스명
+                - dataType : 요청파일 타입 (XML, Json중 JSON 으로 설정)
+                - startIdx : 요청시작위치
+                - endIdx : 요청종료위치
+                - RCP_NM : 메뉴명
+                - RCP_PARTS_DTLS : 재료정보1
+                - RCP_PAT2 : 요리종류
+
+        */
+        // 메뉴 정보를 검색
         String URL = "https://openapi.foodsafetykorea.go.kr/api/a610db1f12954422b81a/COOKRCP01/json/1/99/RCP_NM=" + search;
         RequestQueue requestQueue = Volley.newRequestQueue(getActivity());
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(
@@ -125,22 +138,9 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
                     @Override
                     public void onResponse(JSONObject response) {
                         try {
-//                              testArr = (JSONArray) response.get("results");
+                            // 레시피 데이터 처리
                             COOKRCP01 = (JSONObject) response.get("COOKRCP01");
                             String total = (String) COOKRCP01.get("total_count");
-
-//                            if(total.equals("0")){
-//                                myrv.setAlpha(0);
-//                                emptyView.setVisibility(View.VISIBLE);
-//                            }
-//
-//                            else{
-//                                recipeData = (JSONArray) COOKRCP01.get("row");
-//                                for(int i=0; i<recipeData.length(); i++) {
-//                                    Log.i("the search res is:", String.valueOf(tmp.get("RCP_NM")));
-//                                    String thum = "https"+((String)tmp.get("ATT_FILE_NO_MK")).substring(4);
-//                                    searchRecipe.add(new Recipe((String)tmp.get("RCP_NM"),(String)tmp.get("RCP_NM"), thum, Integer.parseInt((String)tmp.get("INFO_WGT")), (String)tmp.get("RCP_PAT2")));
-//                                }
 
                             recipeData = (JSONArray) COOKRCP01.get("row");
                             for (int i = 0; i < recipeData.length(); i++) {
@@ -160,17 +160,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
 
                             progressBar.setVisibility(View.GONE);
 
-//                            if(searchRecipe.isEmpty()){
-//                                myrv.setAlpha(0);
-//                                emptyView.setVisibility(View.VISIBLE);
-//                            }
-//                            else{
-//                                emptyView.setVisibility(View.GONE);
-//                                RecyclerViewAdapter myAdapter = new RecyclerViewAdapter(getContext(), searchRecipe);
-//                                myrv.setAdapter(myAdapter);
-//                                myrv.setItemAnimator(new DefaultItemAnimator());
-//                                myrv.setAlpha(1);
-//                            }
+                            }
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
