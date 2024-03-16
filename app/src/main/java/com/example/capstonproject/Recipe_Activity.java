@@ -70,7 +70,7 @@ public class Recipe_Activity extends AppCompatActivity implements App{
     private FloatingActionButton fab, button;
     private boolean like = false;
     private TextToSpeech tts;
-
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

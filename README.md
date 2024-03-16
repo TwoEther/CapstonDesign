@@ -1,9 +1,6 @@
 # 요리 초보를 위한 요리 레시피 애플리 케이션 <공공데이터 레시피 API를 사용>
 <p align="center"><img src="screenshots/chef_logo.png" heigth="250" width="250"/>Reference. https://github.com/MariaGarber/Home-Chef</p>
 
-<h4>조리 식품의 레시피 DB : <a href="https://www.foodsafetykorea.go.kr/api/newDatasetDetail.do">링크</a></h4>
-
-
 <h5>🧨 기술 스택
 <ul>
     <li>Java</li>
@@ -32,7 +29,9 @@
 </ul><hr>
 
 
-<h5> ✨ 공공 데이터 API 처리 코드
+<h5>🧤 공공데이터 API 및 처리 코드
+<ul><li>식품의약품안전처 공공데이터 활용 포털의 조리식품의 레시피 DB 사용</li></ul>
+<hr><p>구현 코드 중 레시피 검색 함수</p>
 
     private void searchRecipe(String search) {
         // 레시피를 담을 리스트
